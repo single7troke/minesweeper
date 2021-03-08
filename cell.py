@@ -4,6 +4,7 @@ class Cell:
         self.clicked = False
         self.empty = True
         self.flag = False
+        self.mistake = False
         self.nearby_bombs_count = 0
 
     def set_bomb(self):

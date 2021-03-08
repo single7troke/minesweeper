@@ -61,7 +61,7 @@ class Board:
             elif left and not cell.clicked and cell.nearby_bombs_count:
                 cell.set_clicked()
             elif left and not cell.clicked and cell.bomb:
-                self.show_all_bombs()
+                cell.clicked = True
             elif right and not cell.clicked:
                 cell.flag = not cell.flag
 
